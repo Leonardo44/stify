@@ -26,6 +26,7 @@ struct HomeTabView: View {
         .accentColor(.white)
         .onAppear {
             UITabBar.appearance().unselectedItemTintColor = .gray
+            UITabBar.appearance().backgroundColor = UIColor.gray.withAlphaComponent(0.2)
         }
     }
 }

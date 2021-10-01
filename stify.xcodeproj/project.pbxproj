@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3B094462706C5B2007867A7 /* RecentlyPlayedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */; };
 		B3D29C5F27056472007FE783 /* stifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D29C5E27056472007FE783 /* stifyApp.swift */; };
 		B3D29C6127056472007FE783 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D29C6027056472007FE783 /* ContentView.swift */; };
 		B3D29C6327056473007FE783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D29C6227056473007FE783 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayedViewCell.swift; sourceTree = "<group>"; };
 		B3D29C5B27056472007FE783 /* stify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D29C5E27056472007FE783 /* stifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stifyApp.swift; sourceTree = "<group>"; };
 		B3D29C6027056472007FE783 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3B094472706D120007867A7 /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				B3B094482706D135007867A7 /* Views */,
+			);
+			path = Artist;
+			sourceTree = "<group>";
+		};
+		B3B094482706D135007867A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B3D29C5227056472007FE783 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,7 @@
 		B3D29C71270564D8007FE783 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				B3B094472706D120007867A7 /* Artist */,
 				B3D29C72270564E3007FE783 /* Home */,
 			);
 			path = Ui;
@@ -93,6 +111,7 @@
 		B3D29C72270564E3007FE783 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B3D29C7C27056A61007FE783 /* Cells */,
 				B3D29C7527056697007FE783 /* Views */,
 				B3D29C73270564FC007FE783 /* HomeTabView.swift */,
 			);
@@ -107,6 +126,14 @@
 				B3D29C7A270566D6007FE783 /* MyLibrary.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B3D29C7C27056A61007FE783 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +208,7 @@
 			files = (
 				B3D29C6827056473007FE783 /* Persistence.swift in Sources */,
 				B3D29C6B27056473007FE783 /* stify.xcdatamodeld in Sources */,
+				B3B094462706C5B2007867A7 /* RecentlyPlayedViewCell.swift in Sources */,
 				B3D29C74270564FC007FE783 /* HomeTabView.swift in Sources */,
 				B3D29C6127056472007FE783 /* ContentView.swift in Sources */,
 				B3D29C77270566A8007FE783 /* Home.swift in Sources */,
