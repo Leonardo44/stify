@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeTabView: View {
+    init() {
+        
+    }
     var body: some View {
         TabView {
             Home()
@@ -25,8 +28,17 @@ struct HomeTabView: View {
         }
         .accentColor(.white)
         .onAppear {
-            UITabBar.appearance().unselectedItemTintColor = .gray
-            UITabBar.appearance().backgroundColor = UIColor.gray.withAlphaComponent(0.2)
+            UITabBar.appearance().isTranslucent = true
+            UITabBar.appearance().unselectedItemTintColor = .black
+            UITabBar.appearance().barTintColor = UIColor.gray.withAlphaComponent(0.2)
+            UITabBar.appearance().backgroundColor =  UIColor.gray.withAlphaComponent(0.2)
+            UITabBar.appearance().tintColor = UIColor.gray.withAlphaComponent(0.2)
+            
+            if #available(iOS 15.0, *) {
+                UITabBar.appearance().scrollEdgeAppearance = .none
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
 }

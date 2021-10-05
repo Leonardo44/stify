@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B3B094462706C5B2007867A7 /* RecentlyPlayedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */; };
+		B3CBB7B4270C0D4200E7CCA0 /* ArtistAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBB7B3270C0D4200E7CCA0 /* ArtistAlbum.swift */; };
+		B3CBB7B6270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBB7B5270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift */; };
+		B3CBB7B8270C12CD00E7CCA0 /* NewRealeaseArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBB7B7270C12CD00E7CCA0 /* NewRealeaseArtistView.swift */; };
 		B3D29C5F27056472007FE783 /* stifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D29C5E27056472007FE783 /* stifyApp.swift */; };
 		B3D29C6127056472007FE783 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D29C6027056472007FE783 /* ContentView.swift */; };
 		B3D29C6327056473007FE783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D29C6227056473007FE783 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayedViewCell.swift; sourceTree = "<group>"; };
+		B3CBB7B3270C0D4200E7CCA0 /* ArtistAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAlbum.swift; sourceTree = "<group>"; };
+		B3CBB7B5270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRecentlyPlayedCell.swift; sourceTree = "<group>"; };
+		B3CBB7B7270C12CD00E7CCA0 /* NewRealeaseArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRealeaseArtistView.swift; sourceTree = "<group>"; };
 		B3D29C5B27056472007FE783 /* stify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D29C5E27056472007FE783 /* stifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stifyApp.swift; sourceTree = "<group>"; };
 		B3D29C6027056472007FE783 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,8 @@
 		B3B094482706D135007867A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B3CBB7B3270C0D4200E7CCA0 /* ArtistAlbum.swift */,
+				B3CBB7B7270C12CD00E7CCA0 /* NewRealeaseArtistView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */,
+				B3CBB7B5270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -208,10 +217,13 @@
 			files = (
 				B3D29C6827056473007FE783 /* Persistence.swift in Sources */,
 				B3D29C6B27056473007FE783 /* stify.xcdatamodeld in Sources */,
+				B3CBB7B4270C0D4200E7CCA0 /* ArtistAlbum.swift in Sources */,
 				B3B094462706C5B2007867A7 /* RecentlyPlayedViewCell.swift in Sources */,
 				B3D29C74270564FC007FE783 /* HomeTabView.swift in Sources */,
+				B3CBB7B6270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift in Sources */,
 				B3D29C6127056472007FE783 /* ContentView.swift in Sources */,
 				B3D29C77270566A8007FE783 /* Home.swift in Sources */,
+				B3CBB7B8270C12CD00E7CCA0 /* NewRealeaseArtistView.swift in Sources */,
 				B3D29C7B270566D6007FE783 /* MyLibrary.swift in Sources */,
 				B3D29C5F27056472007FE783 /* stifyApp.swift in Sources */,
 				B3D29C79270566BB007FE783 /* Search.swift in Sources */,

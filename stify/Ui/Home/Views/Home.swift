@@ -12,6 +12,9 @@ struct Home: View {
             GridItem(.flexible()),
             GridItem(.flexible())
     ]
+    var favoriteAlbumsRows: [GridItem] = [
+        GridItem(.fixed(128))
+    ]
     
     var body: some View {
         ZStack {
@@ -36,7 +39,57 @@ struct Home: View {
                                 .frame(height: 64)
                         }
                     }
-                    .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity)
+                    
+                    // News album artist you follow
+                    VStack {
+                        HStack {
+                            Text("New release")
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                            Spacer()
+                        }
+                        NewRealeaseArtistView()
+                    }
+                    .padding(.bottom, 8)
+                    
+                    // Song recently played
+                    VStack {
+                        HStack {
+                            Text("Songs recently played")
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                            Spacer()
+                        }
+                       
+                        ScrollView(.horizontal) {
+                            LazyHGrid(rows: favoriteAlbumsRows, spacing: 8) {
+                                ForEach([1, 2, 3, 4, 5, 6], id: \.self) { item in
+                                    SongRecentlyPlayedCell()
+                                        .frame(width: 96, height: 128)
+                                }
+                            }
+                        }
+                    }
+                    
+                    // Favorites album
+                    VStack {
+                        HStack {
+                            Text("Favorite albums")
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                            Spacer()
+                        }
+                       
+                        ScrollView(.horizontal) {
+                            LazyHGrid(rows: favoriteAlbumsRows, spacing: 8) {
+                                ForEach([1, 2, 3, 4, 5, 6], id: \.self) { item in
+                                    ArtistAlbum()
+                                        .frame(width: 96, height: 128)
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
