@@ -9,7 +9,15 @@ import SwiftUI
 
 struct HomeTabView: View {
     init() {
+        let appearance = UITabBarAppearance()
+        appearance.backgroundColor = .black.withAlphaComponent(0.8)
         
+        UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().standardAppearance = appearance
+        
+        if #available(iOS 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        }
     }
     var body: some View {
         TabView {
@@ -19,27 +27,14 @@ struct HomeTabView: View {
                 }
             Search()
                 .tabItem {
-                    Label("Home", systemImage: "magnifyingglass")
+                    Label("Search", systemImage: "magnifyingglass")
                 }
             MyLibrary()
                 .tabItem {
-                    Label("Home", systemImage: "list.dash")
+                    Label("My library", systemImage: "list.dash")
                 }
         }
         .accentColor(.white)
-        .onAppear {
-            UITabBar.appearance().isTranslucent = true
-            UITabBar.appearance().unselectedItemTintColor = .black
-            UITabBar.appearance().barTintColor = UIColor.gray.withAlphaComponent(0.2)
-            UITabBar.appearance().backgroundColor =  UIColor.gray.withAlphaComponent(0.2)
-            UITabBar.appearance().tintColor = UIColor.gray.withAlphaComponent(0.2)
-            
-            if #available(iOS 15.0, *) {
-                UITabBar.appearance().scrollEdgeAppearance = .none
-            } else {
-                // Fallback on earlier versions
-            }
-        }
     }
 }
 
