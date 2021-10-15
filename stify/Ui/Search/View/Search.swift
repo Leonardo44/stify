@@ -134,7 +134,7 @@ struct Search: View {
                                 Spacer()
                             }
                         }
-                        Spacer()
+                        .background(Color.red)
                     }
                 }
             }
