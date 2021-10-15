@@ -32,7 +32,7 @@ struct Home: View {
             ZStack {
                 Color.black
                     .ignoresSafeArea()
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     ZStack {
                         VStack {
                             LinearGradient(gradient: gradient, startPoint: .bottomTrailing, endPoint: .topLeading)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3B094462706C5B2007867A7 /* RecentlyPlayedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */; };
+		B3C0512D27193276001382A8 /* MainSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C0512C27193276001382A8 /* MainSearchBar.swift */; };
 		B3CBB7B4270C0D4200E7CCA0 /* ArtistAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBB7B3270C0D4200E7CCA0 /* ArtistAlbum.swift */; };
 		B3CBB7B6270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBB7B5270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift */; };
 		B3CBB7B8270C12CD00E7CCA0 /* NewRealeaseArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBB7B7270C12CD00E7CCA0 /* NewRealeaseArtistView.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayedViewCell.swift; sourceTree = "<group>"; };
+		B3C0512C27193276001382A8 /* MainSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchBar.swift; sourceTree = "<group>"; };
 		B3CBB7B3270C0D4200E7CCA0 /* ArtistAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAlbum.swift; sourceTree = "<group>"; };
 		B3CBB7B5270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRecentlyPlayedCell.swift; sourceTree = "<group>"; };
 		B3CBB7B7270C12CD00E7CCA0 /* NewRealeaseArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRealeaseArtistView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B360D4752710087F00ED70C0 /* Representable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Representable;
+			sourceTree = "<group>";
+		};
 		B3B094472706D120007867A7 /* Artist */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +76,31 @@
 				B3CBB7B7270C12CD00E7CCA0 /* NewRealeaseArtistView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B3C0512927192E91001382A8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B3C0512B2719325D001382A8 /* Representable */,
+				B3C0512A27192F97001382A8 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B3C0512A27192F97001382A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3D29C78270566BB007FE783 /* Search.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3C0512B2719325D001382A8 /* Representable */ = {
+			isa = PBXGroup;
+			children = (
+				B3C0512C27193276001382A8 /* MainSearchBar.swift */,
+			);
+			path = Representable;
 			sourceTree = "<group>";
 		};
 		B3D29C5227056472007FE783 = {
@@ -110,6 +144,7 @@
 		B3D29C71270564D8007FE783 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				B3C0512927192E91001382A8 /* Search */,
 				B3B094472706D120007867A7 /* Artist */,
 				B3D29C72270564E3007FE783 /* Home */,
 			);
@@ -119,6 +154,7 @@
 		B3D29C72270564E3007FE783 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B360D4752710087F00ED70C0 /* Representable */,
 				B3D29C7C27056A61007FE783 /* Cells */,
 				B3D29C7527056697007FE783 /* Views */,
 				B3D29C73270564FC007FE783 /* HomeTabView.swift */,
@@ -130,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				B3D29C76270566A8007FE783 /* Home.swift */,
-				B3D29C78270566BB007FE783 /* Search.swift */,
 				B3D29C7A270566D6007FE783 /* MyLibrary.swift */,
 			);
 			path = Views;
@@ -219,6 +254,7 @@
 				B3D29C6B27056473007FE783 /* stify.xcdatamodeld in Sources */,
 				B3CBB7B4270C0D4200E7CCA0 /* ArtistAlbum.swift in Sources */,
 				B3B094462706C5B2007867A7 /* RecentlyPlayedViewCell.swift in Sources */,
+				B3C0512D27193276001382A8 /* MainSearchBar.swift in Sources */,
 				B3D29C74270564FC007FE783 /* HomeTabView.swift in Sources */,
 				B3CBB7B6270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift in Sources */,
 				B3D29C6127056472007FE783 /* ContentView.swift in Sources */,
