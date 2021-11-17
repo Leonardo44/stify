@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3A70C722744BAAB0081C2A6 /* ShareModalRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A70C712744BAAB0081C2A6 /* ShareModalRepresentable.swift */; };
+		B3A70C762744BADC0081C2A6 /* ShareModalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A70C752744BADC0081C2A6 /* ShareModalVC.swift */; };
 		B3B094462706C5B2007867A7 /* RecentlyPlayedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */; };
 		B3C0512D27193276001382A8 /* MainSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C0512C27193276001382A8 /* MainSearchBar.swift */; };
 		B3CBB7B4270C0D4200E7CCA0 /* ArtistAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBB7B3270C0D4200E7CCA0 /* ArtistAlbum.swift */; };
@@ -23,10 +25,11 @@
 		B3D29C79270566BB007FE783 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D29C78270566BB007FE783 /* Search.swift */; };
 		B3D29C7B270566D6007FE783 /* MyLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D29C7A270566D6007FE783 /* MyLibrary.swift */; };
 		B3D70E9E272BA4D200DB78E6 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D70E9D272BA4D200DB78E6 /* AlbumDetailView.swift */; };
-		B3D70EA2272BAEDE00DB78E6 /* ShareModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D70EA1272BAEDE00DB78E6 /* ShareModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3A70C712744BAAB0081C2A6 /* ShareModalRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareModalRepresentable.swift; sourceTree = "<group>"; };
+		B3A70C752744BADC0081C2A6 /* ShareModalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareModalVC.swift; sourceTree = "<group>"; };
 		B3B094452706C5B2007867A7 /* RecentlyPlayedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayedViewCell.swift; sourceTree = "<group>"; };
 		B3C0512C27193276001382A8 /* MainSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchBar.swift; sourceTree = "<group>"; };
 		B3CBB7B3270C0D4200E7CCA0 /* ArtistAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAlbum.swift; sourceTree = "<group>"; };
@@ -44,7 +47,6 @@
 		B3D29C78270566BB007FE783 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		B3D29C7A270566D6007FE783 /* MyLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibrary.swift; sourceTree = "<group>"; };
 		B3D70E9D272BA4D200DB78E6 /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
-		B3D70EA1272BAEDE00DB78E6 /* ShareModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +215,8 @@
 		B3D70EA0272BAECC00DB78E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B3D70EA1272BAEDE00DB78E6 /* ShareModalView.swift */,
+				B3A70C712744BAAB0081C2A6 /* ShareModalRepresentable.swift */,
+				B3A70C752744BADC0081C2A6 /* ShareModalVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,14 +295,15 @@
 				B3D29C6B27056473007FE783 /* stify.xcdatamodeld in Sources */,
 				B3CBB7B4270C0D4200E7CCA0 /* ArtistAlbum.swift in Sources */,
 				B3B094462706C5B2007867A7 /* RecentlyPlayedViewCell.swift in Sources */,
+				B3A70C722744BAAB0081C2A6 /* ShareModalRepresentable.swift in Sources */,
 				B3C0512D27193276001382A8 /* MainSearchBar.swift in Sources */,
+				B3A70C762744BADC0081C2A6 /* ShareModalVC.swift in Sources */,
 				B3D70E9E272BA4D200DB78E6 /* AlbumDetailView.swift in Sources */,
 				B3D29C74270564FC007FE783 /* HomeTabView.swift in Sources */,
 				B3CBB7B6270C10CF00E7CCA0 /* SongRecentlyPlayedCell.swift in Sources */,
 				B3D29C6127056472007FE783 /* ContentView.swift in Sources */,
 				B3D29C77270566A8007FE783 /* Home.swift in Sources */,
 				B3CBB7B8270C12CD00E7CCA0 /* NewRealeaseArtistView.swift in Sources */,
-				B3D70EA2272BAEDE00DB78E6 /* ShareModalView.swift in Sources */,
 				B3D29C7B270566D6007FE783 /* MyLibrary.swift in Sources */,
 				B3D29C5F27056472007FE783 /* stifyApp.swift in Sources */,
 				B3D29C79270566BB007FE783 /* Search.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 struct AlbumDetailView: View {
     let gradient = Gradient(colors: [.purple, .black])
     @State private var isSharePresented = false
+    @State private var text = "Text"
     
     var body: some View {
         ZStack {
@@ -92,12 +93,29 @@ struct AlbumDetailView: View {
             
         }
         .fullScreenCover(isPresented: $isSharePresented, onDismiss: dismissShareView) {
-            ShareModalView()
+            ZStack {
+                Color.black.opacity(0.0).edgesIgnoringSafeArea(.all)
+                ShareModalRepresentable(text: $text).edgesIgnoringSafeArea(.all)
+            }
+            .background(BackgroundBlurView())
+            
         }
         .navigationBarTitle("Album - [Name]")
     }
     
     private func dismissShareView() {}
+}
+
+struct BackgroundBlurView: UIViewRepresentable {
+    func makeUIView(context: Context) -> UIView {
+        let view = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+        DispatchQueue.main.async {
+            view.superview?.superview?.backgroundColor = .clear
+        }
+        return view
+    }
+
+    func updateUIView(_ uiView: UIView, context: Context) {}
 }
 
 struct AlbumDetailView_Previews: PreviewProvider {
